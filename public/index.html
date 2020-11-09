@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <!--   http-server -S -C cert.pem -o -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Creo il tipo di tema dell'applicazione descritto poi nel file manifest -->
+        <meta name="theme-color" content="#009578">
+        <title>PWA</title>
+        <link rel="stylesheet" href="src/master.css">
+        <!-- richiamo il manifest appena creato -->
+        <link rel="manifest" href="manifest.json">
+        <!-- creo icona per dispositivi apple -->
+        <link rel="apple-touch-icon" href="images/logo192.png">
+
+        <!-- Gestisco la rotazione dello schermo -->
+        <style type="text/css">
+            #warning-message{ 
+              display: none; 
+            }
+            @media only screen and (orientation:portrait){
+                #wrapper { 
+                  display:none; 
+                  }
+                #warning-message { 
+                  display:block; 
+                  }
+            }
+            @media only screen and (orientation:landscape){
+                #warning-message{
+                  display:none; 
+              }
+            }
+        </style>
+        <!-- FINE Gestisco la rotazione dello schermo --> 
+
+        <!-- implemento IONIC -->
+      <!--   <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+  <style>
+    :root {
+      --ion-safe-area-top: 20px;
+      --ion-safe-area-bottom: 22px;
+    }
+  </style> -->
+  <!-- FINE IONIC -->
+
+    </head>
+    <body>
+       
+
+      
+
+
+        <div id="wrapper">
+            <p>Ciao ! Sono una PWA Creata dal Grande Nicola: Installami anche sul pc usando Chrome!</p>
+       
+        </div>
+        <div id="warning-message">
+           Questo sito funziona soltanto in landscape,abilita la rotazione automatica e ruota il telefono 
+        </div>
+
+
+      
+ 
+<!-- CODICE IONIC -->
+
+<!-- <ion-app>
+  <ion-toolbar>
+    <ion-title>Title</ion-title>
+  </ion-toolbar>
+  <ion-tabs>
+    <ion-tab tab="fragment1">
+      <ion-header translucent>
+        <ion-toolbar>
+      
+        </ion-toolbar>
+      </ion-header>
+
+      <ion-content fullscreen class="ion-padding">
+        <h1>Fragment1</h1>
+        <button>UNO</button>
+        <button>due</button>
+      </ion-content>
+    </ion-tab>
+
+    <ion-tab tab="fragment2">
+      <ion-header translucent>
+        <ion-toolbar>
+          <ion-title>Movies</ion-title> 
+        </ion-toolbar>
+      </ion-header>
+
+      <ion-content fullscreen class="ion-padding">
+        <h1>Fragment2</h1>
+     
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <div>Pezzo1</div>
+            </ion-col>
+            <ion-col>
+              <div>Pezzo2</div>
+            </ion-col>
+          </ion-row>
+          </ion-grid>
+
+      </ion-content>
+    </ion-tab>
+
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="fragment1">
+        <ion-label>Parte1</ion-label>
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="fragment2">
+        <ion-label>Parte2</ion-label>
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </ion-tab-button>
+
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-app>
+-->
+<!-- FINE CODICE IONIC -->
+
+
+
+
+
+
+        <!-- Rendo l'applicazione installabile -->
+        <script src="src/index.js"></script>
+    </body>
+</html>
