@@ -1,5 +1,3 @@
-const { response } = require("express");
-
 // Inizializzo l'applicazione, questo codice, almeno chè non modificato, verrà processato solo una volta
 self.addEventListener("install", e => {
 /* console.log("Applicazione installabile sui dispositivi!"); */
